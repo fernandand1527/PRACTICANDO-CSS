@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICANDO CSS - SuperCell-30</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>  
+    <center>
+        <p>¡Soy un párrafo inicial!</p> 
+        <hr>
+
+        <p class="my-class">¡Yo también!</p>
+        <p id="my-id-1">"Al igual que yo"</p>
+
+        <div>
+            <p class="my-class">¡Yo soy un párrafo dentro de un div!</p>
+            <p id="my-id-2">"Al igual que yo"</p>
+        </div>
+
+        <p class="special-text">¡Soy un párrafo independiente fuera del div!</p>
+        <button>Soy un boton</button>
+        <p>Yo tambien soy un parrafo</p>
+
+        <pre>
+            Producto:           Precio:            Cantidad:
+            Manzana:            0.50               2
+            Naranja:            0.75               1
+        </pre>
+        
+        <p style="background-color: #FD8F62; width: 300px; text-align: center; margin-top: 10px; padding: 10px;">
+            ¡Soy un div con CSS en linea!
+        </p>  
+
+        <ul>
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+        </ul>
+
+        <ol>
+            <li>Elemento ordenado 1</li>
+            <li>Elemento ordenado 2</li>
+        </ol>
+
+        <hr>
+
+        <p class="instructions-container">
+            <label for="zip">Zip Code <span class="instructions">5 Digits</span></label>
+            <input type="number" pattern="[0-9]*" maxlength="5" id="zip" name="zip" required>
+        </p>
+
+        <label for="areacode">Phone * <span class="hidden">Area Code</span></label>
+        <input required type="tel" name="areacode" id="areacode" maxlength="3">
+        -
+        <label for="threedigits" class="inline"><span class="hidden">First Three Phone Digits</span> *</label>
+        <input required type="tel" name="threedigits" id="threedigits" maxlength="3">
+        -
+        <label for="fourdigits" class="inline"><span class="hidden">Last Four Phone Digits</span> *</label>
+        <input required type="tel" name="fourdigits" id="fourdigits" maxlength="4">
+
+        <hr>
+
+        <div id="first">Soy el primer div.</div>
+        <div id="second">Soy el segundo div.</div>
+        <div id="third">Soy el tercer div.</div>
+
+    </center>   
+</body>
+</html>

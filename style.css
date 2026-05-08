@@ -1,0 +1,112 @@
+/* --- CONFIGURACIÓN GLOBAL --- */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* --- PÁRRAFOS Y TEXTOS --- */
+p {
+    color: rgb(240, 211, 229); /* El rosa muy clarito */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corregido: .my-class (con guion, no punto) */
+.my-class {
+    color: rgb(0, 204, 255); /* Azul cyan */
+    font-family: Avenir, sans-serif;
+}
+
+/* Corregido: #my-id-1 y #my-id-2 (con guiones) */
+#my-id-1, #my-id-2 {
+    color: rgb(72, 255, 0); /* Verde lima */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Párrafo específico dentro de un div */
+div p {
+    color: rgb(150, 150, 150); /* Agregué un gris ya que estaba vacío */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Botones y IDs específicos con Fucsia */
+button, #my-id-1, #my-id-2 {
+    color: rgb(255, 0, 200); /* Fucsia */
+    font-family: Avenir, sans-serif;
+}
+
+/* --- BLOQUES DE PRODUCTOS (PRE) --- */
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+    text-align: left;
+    display: inline-block; /* Para que se centre con el <center> del HTML */
+}
+
+/* --- LISTAS (Logical Properties del tablero) --- */
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px; /* Los 40px importantes de la clase */
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+
+/* --- FORMULARIOS Y ACCESIBILIDAD --- */
+.instructions {
+    position: relative;
+    top: 1em; /* Ajustado para que no se baje tanto */
+    display: block;
+    color: #FF66AA; /* Rosa para que sea visible */
+}
+
+.instruction-container {
+    margin-bottom: 2em;
+}
+
+/* Clase para ocultar etiquetas del lector de pantalla (image_75ffff.png) */
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* --- BLOQUES DE COLORES FINALES (image_6a9085.png) --- */
+#first {
+    background-color: yellow;
+    width: 100%;
+    font-family: Arial;
+}
+
+#second {
+    background-color: blue;
+    width: 100%; /* Cambiado a 100% para que se vea como en tu foto */
+    font-family: 'Times New Roman', Times, serif;
+    color: white; /* Texto blanco para que se lea en el azul */
+}
+
+#third {
+    background-color: green;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+/* Espaciado de los bloques */
+#first, #second, #third {
+    margin: 10px 0;
+    padding: 30px;
+    font-weight: bold;
+}
+
+div {
+    margin: 20px;
+}
