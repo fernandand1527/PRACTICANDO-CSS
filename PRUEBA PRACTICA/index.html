@@ -3,62 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio de Tabla Clásica - Fernanda García</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Ejercicio Final Tablas - Fernanda García</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Panel de Administración - Backend Developer</h1>
-    </header>
+    <div class="contenedor-principal">
+        <table class="tabla-grande">
+            <caption>🚀 CATÁLOGO DE SERVICIOS PROFESIONALES</caption>
+            <thead>
+                <tr>
+                    <th>VISTA</th>
+                    <th>CATEGORÍA</th> <th>SERVICIO</th>
+                    <th colspan="3">ESPECIFICACIONES TÉCNICAS</th> <th>VALOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://picsum.photos/id/102/50/50" class="img-mini"></td>
+                    <td rowspan="3" class="celda-agrupada">PESTAÑAS</td>
+                    <td>Lifting Pro</td>
+                    <td>Base</td><td>Tinte</td><td>Queratina</td>
+                    <td class="der">$55.000</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/103/50/50" class="img-mini"></td>
+                    <td>Extensiones</td>
+                    <td>Seda</td><td>Pelo a Pelo</td><td>J-Curl</td>
+                    <td class="der">$85.000</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/312/50/50" class="img-mini"></td>
+                    <td>Volumen Ruso</td>
+                    <td>4D</td><td>Seda</td><td>Curva D</td>
+                    <td class="der">$120.000</td>
+                </tr>
 
-    <main>
-        <section class="contenedor-tabla">
-            <table>
-                <caption>Inventario de Herramientas Digitales</caption>
+                <tr>
+                    <td><img src="https://picsum.photos/id/201/50/50" class="img-mini"></td>
+                    <td rowspan="2" class="celda-agrupada">CEJAS</td>
+                    <td>Henna</td>
+                    <td>Diseño</td><td>Perfilado</td><td>Sombreado</td>
+                    <td class="der">$35.000</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/364/50/50" class="img-mini"></td>
+                    <td>Laminado</td>
+                    <td>Nutrición</td><td>Fijación</td><td>Tinte</td>
+                    <td class="der">$45.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6" class="der">TOTAL ESTIMADO DE SERVICIOS SELECCIONADOS:</td>
+                    <td class="der-total">$340.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Herramienta (Campo)</th>
-                        <th>Categoría</th>
-                        <th>Estado de Uso</th>
-                    </tr>
-                </thead>
+    <div class="seccion-inferior">
+        <table class="tabla-pequena t-azul">
+            <caption>📍 Izquierda</caption>
+            <thead><tr><th>ID</th><th>Dato</th></tr></thead>
+            <tbody><tr><td>1</td><td>Alfa</td></tr></tbody>
+        </table>
 
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td>Visual Studio Code</td>
-                        <td>Editor de Código</td>
-                        <td>Activo</td>
-                    </tr>
-                    <tr>
-                        <td>002</td>
-                        <td>MySQL Workbench</td>
-                        <td>Base de Datos</td>
-                        <td>Activo</td>
-                    </tr>
-                    <tr>
-                        <td>003</td>
-                        <td>Git Bash</td>
-                        <td>Control de Versiones</td>
-                        <td>Activo</td>
-                    </tr>
-                </tbody>
+        <table class="tabla-pequena t-fucsia">
+            <caption>📍 Centro</caption>
+            <thead><tr><th>Item</th><th>Valor</th></tr></thead>
+            <tbody><tr><td>A</td><td>100</td></tr></tbody>
+        </table>
 
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Última actualización: Mayo 2026</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <p>Desarrollado por Fernanda García</p>
-    </footer>
+        <table class="tabla-pequena t-naranja">
+            <caption>📍 Derecha</caption>
+            <thead><tr><th>Ref</th><th>Estado</th></tr></thead>
+            <tbody><tr><td>X</td><td>OK</td></tr></tbody>
+        </table>
+    </div>
 
 </body>
 </html>

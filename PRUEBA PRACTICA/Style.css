@@ -1,95 +1,83 @@
-/* --- ESTILO PARA EL DOCUMENTO COMPLETO --- */
+/* RESET BÁSICO */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f7f6; /* Color de fondo del documento */
-    color: #333;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-    text-align: center; /* Centrado clásico de elementos inline-block */
-}
-
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    margin-bottom: 30px;
-}
-
-footer {
-    margin-top: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
     padding: 20px;
-    font-size: 0.9em;
-    color: #777;
 }
 
-/* --- ESTILO ESPECÍFICO PARA LA TABLA --- */
-.contenedor-tabla {
-    display: block; /* Aseguramos que sea bloque */
-    width: 90%;
-    margin: 0 auto; /* Centramos el contenedor sin flex */
+/* 1. CONTENEDOR CON MAX-WIDTH */
+.contenedor-principal, .seccion-inferior {
+    width: 95%;           /* Ocupa el 95% en pantallas pequeñas */
+    max-width: 1100px;    /* NO crecerá más de 1100px en pantallas grandes */
+    margin: 0 auto;       /* CENTRA el contenedor en la pantalla */
 }
 
 table {
-    display: table; /* Propiedad por defecto */
-    margin: 0 auto; /* Centramos la tabla respecto a su contenedor */
-    width: 100%;
-    max-width: 800px;
-    border-collapse: collapse; /* Evita bordes dobles */
-    background-color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;          /* La tabla llena su contenedor */
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Título (Caption) */
-caption {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #ff69b4; /* Tu fucsia de identidad */
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-/* Cabecera (Campos) */
-thead {
+/* ESTILOS TABLA GRANDE (PRINCIPAL) */
+.tabla-grande th {
     background-color: #ff69b4;
     color: white;
-}
-
-th {
     padding: 15px;
     border: 1px solid #ddd;
-    text-transform: uppercase;
-    font-size: 0.85em;
 }
 
-/* Cuerpo (Registros) */
-td {
+.tabla-grande td {
+    border: 1px solid #ddd;
     padding: 12px;
-    border: 1px solid #eee;
+    text-align: center;
 }
 
-/* Estilo para los Registros (Fila cebra) */
-tbody tr:nth-child(even) {
+.img-mini {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff69b4;
+    object-fit: cover;
+}
+
+/* CELDA CON ROWSPAN */
+.celda-agrupada {
     background-color: #fff0f5;
+    font-weight: bold;
+    color: #ff69b4;
+    vertical-align: middle;
 }
 
-/* Efecto al pasar el cursor */
-tbody tr:hover {
-    background-color: #ffe4e1;
-    cursor: default;
+/* 2. LAS 3 TABLAS DE ABAJO CON MAX-WIDTH INDIVIDUAL */
+.seccion-inferior {
+    overflow: hidden;
+    clear: both;
 }
 
-/* Pie de la tabla */
-tfoot {
-    background-color: #333;
-    color: #fff;
-    font-style: italic;
+.tabla-pequena {
+    float: left;
+    width: 31%;          /* Mantenemos el ancho relativo */
+    margin: 1%;
 }
 
-tfoot td {
+.tabla-pequena th {
+    background-color: #ff69b4;
+    color: white;
     padding: 10px;
 }
+
+/* BORDES DE COLORES (Punto 2 del ejercicio) */
+.t-azul { border-top: 6px solid blue; }
+.t-fucsia { border-top: 6px solid #ff69b4; }
+.t-naranja { border-top: 6px solid orange; }
+
+.der { text-align: right; font-weight: bold; }
+.der-total { background-color: #333; color: #ffd700; padding: 10px; text-align: right; }
