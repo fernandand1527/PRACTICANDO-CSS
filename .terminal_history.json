@@ -266,7 +266,117 @@
       "command": "git push origin develop",
       "timestamp": 1779261822903,
       "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779261980591,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"feat: mover index a la raíz para despliegue directo\"",
+      "timestamp": 1779262008376,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779262032495,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262180315,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git restore ../.terminal_history.json",
+      "timestamp": 1779262224451,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: maquetación vertical y actualización de historial\"",
+      "timestamp": 1779262273613,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779262295396,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262316256,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git restore .terminal_history.json",
+      "timestamp": 1779262417607,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash",
+      "timestamp": 1779262432060,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262453019,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout -- .terminal_history.json",
+      "timestamp": 1779262487213,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash --include-untracked",
+      "timestamp": 1779262502967,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262521974,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "rm .terminal_history.json",
+      "timestamp": 1779262557591,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262576822,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git reset --hard HEAD",
+      "timestamp": 1779262617053,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262640303,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash --include-untracked",
+      "timestamp": 1779262746232,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262792897,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git remote add origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1779263128199,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git remote add origin https://github.com/fernandand1527/PRUEBAPRACTICA",
+      "timestamp": 1779263163717,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
     }
   ],
-  "lastUpdated": 1779261822903
+  "lastUpdated": 1779263163717
 }

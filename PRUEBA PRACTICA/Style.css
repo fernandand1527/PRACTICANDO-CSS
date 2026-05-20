@@ -610,53 +610,23 @@ main, .contenedor-principal {
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
     overflow: hidden;
 }
-/* Estilos para el bloque de composición horizontal */
-.paisaje-completo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    margin: 20px auto;
-    border-radius: 8px;
-    overflow: hidden; /* Corta esquinas sobrantes si deseas aplicar bordes redondeados globales */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilos para el bloque de composición horizontal */
-/* Estilos para armar el paisaje vertical */
-.paisaje-completo {
-    display: flex;
-    flex-direction: column;  /* Alínea las imágenes una debajo de la otra */
-    align-items: center;     /* Las centra horizontalmente */
-    width: 100%;
-    max-width: 600px;        /* Ajusta este ancho a tu gusto para controlar qué tan grande se ve el cuadro */
-    margin: 25px auto;
-    border-radius: 12px;     /* Bordes redondeados para el cuadro completo */
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.paisaje-completo img {
-    width: 100%;             /* Obliga a cada parte a ocupar todo el ancho del cuadro */
-    height: auto;            /* Respeta la proporción original de cada foto */
-    display: block;          /* Elimina cualquier espacio o línea blanca entre las uniones */
-    object-fit: cover;       /* Ajusta la imagen limpiamente */
-}
-cat << 'EOF' >> "PRUEBA PRACTICA/Style.css"
-
 /* ========================================================== */
-/* SECCIÓN EFECTO PAISAJE VERTICAL UNIDO                      */
+/* PAISAJE COMPLETO */
 /* ========================================================== */
+
 .paisaje-completo {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
     max-width: 450px;
+
     margin: 30px auto;
+
     border-radius: 10px;
     overflow: hidden;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -664,6 +634,4 @@ cat << 'EOF' >> "PRUEBA PRACTICA/Style.css"
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain;
 }
-EOF
