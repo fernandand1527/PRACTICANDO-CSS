@@ -643,3 +643,27 @@ main, .contenedor-principal {
     display: block;          /* Elimina cualquier espacio o línea blanca entre las uniones */
     object-fit: cover;       /* Ajusta la imagen limpiamente */
 }
+cat << 'EOF' >> "PRUEBA PRACTICA/Style.css"
+
+/* ========================================================== */
+/* SECCIÓN EFECTO PAISAJE VERTICAL UNIDO                      */
+/* ========================================================== */
+.paisaje-completo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.paisaje-completo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+EOF
