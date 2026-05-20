@@ -1,83 +1,645 @@
-/* RESET BÁSICO */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* =======================================================
+   1. CONFIGURACIÓN GENERAL
+   ======================================================= */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
     padding: 20px;
+    color: #333;
 }
 
-/* 1. CONTENEDOR CON MAX-WIDTH */
-.contenedor-principal, .seccion-inferior {
-    width: 95%;           /* Ocupa el 95% en pantallas pequeñas */
-    max-width: 1100px;    /* NO crecerá más de 1100px en pantallas grandes */
-    margin: 0 auto;       /* CENTRA el contenedor en la pantalla */
+/* =======================================================
+   2. TÍTULOS Y ENCABEZADOS (H1)
+   ======================================================= */
+.titulo-pagina { 
+    text-align: center; 
 }
 
-table {
-    width: 100%;          /* La tabla llena su contenedor */
-    border-collapse: collapse;
-    background: white;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.titulo-tabla {
+    color: #ff69b4;
+    border-bottom: 5px double #ff69b4;
+    display: inline-block;
 }
 
-/* ESTILOS TABLA GRANDE (PRINCIPAL) */
-.tabla-grande th {
-    background-color: #ff69b4;
-    color: white;
+.titulo-espacio {
+    padding: 20px;
+    border: 2px dashed #fd7e14;
+    background-color: #fffaf0;
+    margin: 20px 0;
+}
+
+/* Título con bordes múltiples (Propiedad Shorthand básica) */
+.titulo-bordes {
+    border-style: solid double dashed dotted;
+    border-width: 6px;
+    border-color: #ff69b4;
     padding: 15px;
-    border: 1px solid #ddd;
+    width: fit-content;
 }
 
+/* =======================================================
+   3. ESTILOS DE TABLAS
+   ======================================================= */
+.tabla-grande {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+}
+
+.tabla-grande th, 
 .tabla-grande td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
 }
 
-.img-mini {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #ff69b4;
-    object-fit: cover;
+.tabla-grande thead th {
+    background-color: #ff69b4;
+    color: white;
 }
 
-/* CELDA CON ROWSPAN */
 .celda-agrupada {
     background-color: #fff0f5;
     font-weight: bold;
-    color: #ff69b4;
-    vertical-align: middle;
+    color: #ff1493;
 }
 
-/* 2. LAS 3 TABLAS DE ABAJO CON MAX-WIDTH INDIVIDUAL */
+/* --- Sección Inferior (Tablas una al lado de otra) --- */
 .seccion-inferior {
-    overflow: hidden;
-    clear: both;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .tabla-pequena {
-    float: left;
-    width: 31%;          /* Mantenemos el ancho relativo */
-    margin: 1%;
+    display: inline-table; /* Alineación horizontal sin Flex */
+    width: 30%;
+    margin: 10px;
+    border-collapse: collapse;
 }
 
-.tabla-pequena th {
+.t-azul thead { background-color: #007bff; color: white; }
+.t-fucsia thead { background-color: #ff69b4; color: white; }
+.t-naranja thead { background-color: #fd7e14; color: white; }
+
+.der { text-align: right; }
+.der-total { 
+    text-align: right; 
+    font-weight: bold; 
+    background-color: #333; 
+    color: #ffd700; 
+}
+
+/* =======================================================
+   4. LABORATORIO DE BORDES (PRÁCTICAS DE CLASE)
+   ======================================================= */
+
+/* Estilos con Shorthand (Abreviado) */
+.ej1 { border: 5px solid #0859ab; }
+.ej2 { border: 5px dotted #0859ab; }
+.ej4 { border: 5px double #0859ab; }
+
+/* El ejercicio del H1: Lógica del reloj (Top, Right, Bottom, Left) */
+.h1-practica {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #fff0f5;
+    
+    /* Arriba(25px solid) | Derecha(5px double) | Abajo(10px dashed) | Izquierda(12px dotted) */
+    border-style: solid double dashed dotted; 
+    border-width: 25px 5px 10px 12px; 
+    border-color: #ff69b4; 
+}
+
+/* Estilo para imágenes (Avatar y Logos) */
+.img-mini {
+    border-radius: 50%;
+    border: 2px solid #ff69b4;
+}
+
+.tabla-img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Corregido: border en lugar de border-style */
+    border-radius: 30px 80px; /* Radio elíptico */
+}
+
+/* =======================================================
+   5. BORDER-RADIUS AVANZADO (FORMAS ELÍPTICAS)
+   ======================================================= */
+
+/* Contenedor principal del laboratorio */
+.contenedor-laboratorio {
+    border: 2px solid #ff69b4;
+    border-top-left-radius: 100% 4rem; /* Curva asimétrica */
+    overflow: hidden; 
+    padding: 20px;
+}
+
+.ej9-curva {
+    width: 200px;
+    height: 200px;
+    background-color: #00ced1; 
+    border-top-left-radius: 100% 5rem; 
+    border: 2px solid #333;
+}
+
+.ej10-forma-libre {
+    width: 200px;
+    height: 200px;
+    background-color: #00ced1;
+    margin-top: 20px;
+    /* Lógica: radios horizontales / radios verticales */
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+}
+body {
+    /* 1. La ruta de tu imagen (puede ser un link o archivo local) */
+    background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'); 
+    
+    /* 2. Para que la imagen cubra toda la pantalla sin repetirse */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
+    background-position: center;
+}
+
+/* 3. CAPA DE SEGURIDAD: Para que tu texto se siga leyendo bien */
+main, .contenedor-principal {
+    background-color: rgba(255, 255, 255, 0.85); /* Blanco con transparencia */
+    padding: 30px;
+    border-radius: 15px; /* Aplicando tus curvas elípticas */
+    margin: 50px;
+    
+    /* Aplicando el shorthand de hoy */
+    border: 5px solid #ff69b4; 
+}
+/* --- EJERCICIO: Diferencia de Ajuste --- */
+
+/* Contenedor para ver 'auto' */
+.caja-auto {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    background-image: url('tigre.jpg'); /* Una imagen pequeña */
+    background-repeat: no-repeat;
+    
+    /* LA DIFERENCIA: Se verá la imagen original, 
+       quizás muy pequeña para este cuadro */
+    background-size: auto; 
+}
+
+/* Contenedor para ver 'cover' */
+.caja-cover {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    background-image: url('paisaje.jpg'); /* Una imagen de banner */
+    
+    /* LA DIFERENCIA: Escalará y recortará el paisaje
+       para que no quede ni un píxel vacío en el cuadro */
+    background-size: cover;
+    background-position: center; /* Centramos el recorte */
+}
+.caja-prueba {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border: 5px solid #0859ab;
+    
+    /* Configuración base */
+    background-image: url('https://images.unsplash.com/photo-1464802686167-b939a67e06a1?auto=format&fit=crop&q=80&w=1000'); /* Imagen espacial */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease; /* Para que el cambio se vea suave */
+}
+
+.controles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
     background-color: #ff69b4;
     color: white;
-    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* --- SECCIÓN: LABORATORIO DE FONDOS Y FORMAS AVANZADAS --- */
+
+.contenedor-ejercicio {
+    /* 1. Imagen de fondo (Ajuste según la lámina de los girasoles) */
+    background-image: url('tu-imagen-espacial.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Usamos 'cover' para que llene todo el cuadro sin dejar espacios */
+    background-size: cover; 
+    
+    /* 2. Bordes Múltiples (El sentido del reloj: 25px 5px 10px 12px) */
+    border-style: solid double dashed dotted;
+    border-width: 25px 5px 10px 12px;
+    border-color: #ff69b4; /* Tu fucsia */
+
+    /* 3. Radio Elíptico (La forma irregular de la última lámina) */
+    /* El '/' separa radio horizontal del vertical */
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+
+    /* Ajustes de contenido */
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Para que el texto resalte sobre el fondo */
 }
 
-/* BORDES DE COLORES (Punto 2 del ejercicio) */
-.t-azul { border-top: 6px solid blue; }
-.t-fucsia { border-top: 6px solid #ff69b4; }
-.t-naranja { border-top: 6px solid orange; }
+/* Ejemplo de 'Contain' para comparar (como el tigre de la lámina) */
+.caja-contain {
+    background-image: url('tu-logo.png');
+    background-size: contain; /* Se ve la imagen completa sin recortar */
+    background-repeat: no-repeat;
+    border: 2px solid #0859ab;
+    width: 200px;
+    height: 200px;
+}
+.caja-prueba {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border: 5px solid #ff69b4;
+    background-image: url('tu-imagen.jpg'); /* Pon aquí tu ruta */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.5s ease; /* Para que el cambio sea suave */
+}
+/* Estilo para el visor interactivo (el de los botones) */
+#visor-imagen {
+    width: 100%;
+    max-height: 300px;
+    min-height: 200px;
+    border: 5px solid #ff69b4; /* Tu fucsia */
+    background-image: url('https://picsum.photos/800/600'); /* Imagen de prueba */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto; /* Valor inicial */
+    margin-bottom: 10px;
+}
 
-.der { text-align: right; font-weight: bold; }
-.der-total { background-color: #333; color: #ffd700; padding: 10px; text-align: right; }
+/* Estilo para el contenedor de identidad */
+.contenedor-ejercicio {
+    border-style: solid double dashed dotted;
+    border-width: 25px 5px 10px 12px;
+    border-color: #ff69b4;
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+/* --- LABORATORIO DE FONDOS (Basado en clase) --- */
+
+.fondo-cover {
+    width: 100%;
+    height: 400px;
+    border: 5px solid #0859ab;
+    
+    /* Configuración Maestra de Fondo */
+    background-image: url('tu-imagen.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* LA DIFERENCIA: Cubre todo el espacio (como el paisaje de la lámina) */
+    background-size: cover; 
+}
+
+.fondo-contain {
+    width: 100%;
+    height: 400px;
+    border: 5px dashed #ff69b4;
+    background-image: url('tu-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* LA DIFERENCIA: Se ve toda la imagen sin recortar (como el tigre) */
+    background-size: contain; 
+}
+
+.fondo-mosaic {
+    width: 100%;
+    height: 200px;
+    background-image: url('icono-pequeño.png');
+    
+    /* Efecto mosaico (según tu lámina de 100px) */
+    background-size: 100px;
+    background-repeat: repeat; 
+}
+/* --- LABORATORIO DE IMAGEN (VERSION SIN FLEX) --- */
+
+.laboratorio-contenedor {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px dashed #0859ab;
+    margin: 20px 0;
+    /* Para que los elementos internos no se salgan */
+    overflow: hidden; 
+}
+
+.caja-prueba {
+    /* Centrado clásico sin flex */
+    display: block;
+    margin: 0 auto 20px auto; 
+    
+    width: 300px;
+    height: 300px;
+    border: 5px solid #333;
+    background-color: white;
+    
+    /* Imagen para notar la diferencia */
+    background-image: url('https://picsum.photos/id/237/400/400'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Efecto de suavizado */
+    transition: background-size 0.5s ease;
+}
+
+.controles-interactivos {
+    text-align: center; /* Centra los botones */
+}
+
+.controles-interactivos button {
+    display: inline-block; /* Los pone uno al lado del otro */
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #0859ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.controles-interactivos button:hover {
+    background-color: #ff69b4; /* Fucsia al pasar el mouse */
+}
+/* Contenedor principal del laboratorio */
+.laboratorio-contenedor {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 2px solid #0859ab;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%; /* Ocupa casi todo el ancho */
+    text-align: center; /* Centra el texto y los botones */
+}
+
+/* La caja del visor */
+.caja-prueba {
+    /* Centrado manual */
+    display: block;
+    margin: 0 auto 20px auto; 
+    
+    /* Dimensiones fijas para notar el estiramiento de la imagen */
+    width: 300px;
+    height: 300px;
+    
+    /* Bordes siguiendo tu ejercicio de 'el reloj' */
+    border-style: solid;
+    border-width: 5px;
+    border-color: #333;
+
+    /* Configuración de la imagen */
+    background-image: url('https://picsum.photos/id/237/500/500'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* El valor que cambiará con el botón */
+    background-size: auto; 
+}
+
+/* Estilo de los botones */
+.controles-interactivos button {
+    background-color: #0859ab;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.controles-interactivos button:hover {
+    background-color: #ff69b4; /* Fucsia al pasar el mouse */
+}
+/* --- SECCIÓN: LABORATORIO DE DISEÑO AVANZADO --- */
+
+/* Título con Shorthand y Borde de Reloj (Láminas 1, 2 y 3) */
+.titulo-practica {
+    border-style: solid double dashed dotted;
+    border-width: 25px 5px 10px 12px;
+    border-color: #ff69b4; /* Tu fucsia característico */
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+/* Contenedor con Imagen de Fondo (Lámina del Gato - COVER) */
+.caja-fondo-cover {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    border: 3px solid #333;
+    
+    /* Configuración de imagen */
+    background-image: url('tu-imagen-espacial.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Se estira para llenar todo */
+    
+    /* Forma elíptica de la lámina de border-radius avanzado */
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+}
+
+/* Contenedor con Imagen de Fondo (Lámina del Gato - CONTAIN) */
+.caja-fondo-contain {
+    width: 100%;
+    height: 300px;
+    border: 3px solid #333;
+    background-color: #000; /* Fondo negro para que no se vea vacío */
+    
+    background-image: url('tu-imagen-espacial.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Se ve completa sin recortar */
+}
+/* --- LABORATORIO FINAL DE FONDOS --- */
+
+/* Ejemplo COVER (Como el gato superior o la araña de la derecha) */
+.practica-cover {
+    width: 100%;
+    height: 300px;
+    background-image: url('tu-imagen-gato.jpg');
+    
+    /* LA DIFERENCIA: Escala la imagen para cubrir TODO el contenedor. 
+       Se corta si es necesario para no dejar espacios vacíos. */
+    background-size: cover; 
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #0859ab;
+}
+
+/* Ejemplo CONTAIN (Como el gato inferior o la araña de la izquierda) */
+.practica-contain {
+    width: 100%;
+    height: 300px;
+    background-image: url('tu-imagen-gato.jpg');
+    
+    /* LA DIFERENCIA: Escala la imagen para que se vea COMPLETA. 
+       Deja espacios vacíos (que podemos pintar) para no recortar nada. */
+    background-size: contain; 
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333; /* Color de fondo para llenar los huecos */
+    border: 5px dashed #ff69b4;
+}
+
+/* Ejemplo AUTO / REPEAT (Como el patrón de los girasoles) */
+.practica-mosaico {
+    width: 100%;
+    height: 150px;
+    background-image: url('logo-pequeno.png');
+    
+    /* Mantiene el tamaño original y se repite */
+    background-size: auto; 
+    background-repeat: repeat;
+}
+main, .contenedor-principal {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con 90% de opacidad */
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    /* Tu borde fucsia en shorthand */
+    border: 8px solid #ff69b4; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+}
+/* --- COMPONENTE MAESTRO CONSOLIDADO --- */
+
+.tarjeta-identidad-final {
+    /* 1. DIMENSIONES Y TEXTO */
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* 2. FONDO INTEGRADO (Concepto 'Cover' de la araña/gato) */
+    background-image: url('tu-imagen-espacial.jpg');
+    background-size: cover;      /* Llena todo el espacio sin huecos */
+    background-position: center; /* Centra la parte importante de la foto */
+    background-repeat: no-repeat;
+
+    /* 3. BORDES COMPLEJOS (Regla del Reloj: Arriba Der Abajo Izq) */
+    border-style: solid double dashed dotted;
+    border-width: 25px 5px 10px 12px;
+    border-color: #ff69b4; /* Tu fucsia de identidad */
+
+    /* 4. FORMA ELÍPTICA (Radio Avanzado con barra '/') */
+    /* Horizontal: 2rem 8rem 8rem 9rem / Vertical: 3rem 11rem 6rem 5rem */
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+
+    /* 5. EXTRA: Clipping para que el fondo respete la forma */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Título dentro de la tarjeta */
+.tarjeta-identidad-final h2 {
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.4); /* Fondo sutil para legibilidad */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* --- COMPONENTE FINAL CON TU ENLACE --- */
+
+.tarjeta-consolidada {
+    width: 100%;
+    max-width: 550px;
+    height: 350px;
+    margin: 20px auto;
+    
+    /* 1. EL ENLACE: Pega aquí tu enlace de descarga entre las comillas */
+    background-image: url('c:\Users\juanf\Downloads\lindo-gato-playa-mirando-camara_993067-30.avif');
+    
+    /* 2. EL EFECTO: 'cover' para que llene todo el cuadro como en la lámina */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* 3. BORDES MIXTOS (Regla del reloj) */
+    border-style: solid double dashed dotted;
+    border-width: 25px 5px 10px 12px;
+    border-color: #ff69b4; /* Tu color fucsia */
+
+    /* 4. RADIO ELÍPTICO (La forma irregular) */
+    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
+
+    /* Toques finales para que se vea pro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+/* Estilos para el bloque de composición horizontal */
+.paisaje-completo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden; /* Corta esquinas sobrantes si deseas aplicar bordes redondeados globales */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el bloque de composición horizontal */
+/* Estilos para armar el paisaje vertical */
+.paisaje-completo {
+    display: flex;
+    flex-direction: column;  /* Alínea las imágenes una debajo de la otra */
+    align-items: center;     /* Las centra horizontalmente */
+    width: 100%;
+    max-width: 600px;        /* Ajusta este ancho a tu gusto para controlar qué tan grande se ve el cuadro */
+    margin: 25px auto;
+    border-radius: 12px;     /* Bordes redondeados para el cuadro completo */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.paisaje-completo img {
+    width: 100%;             /* Obliga a cada parte a ocupar todo el ancho del cuadro */
+    height: auto;            /* Respeta la proporción original de cada foto */
+    display: block;          /* Elimina cualquier espacio o línea blanca entre las uniones */
+    object-fit: cover;       /* Ajusta la imagen limpiamente */
+}

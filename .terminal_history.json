@@ -81,7 +81,47 @@
       "command": "git status",
       "timestamp": 1778506325442,
       "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1778506348361,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: corregir desalineación de celdas por rowspan en tabla de servicios\"",
+      "timestamp": 1778506373680,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin fernanda_1-5",
+      "timestamp": 1778506387783,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push master",
+      "timestamp": 1778506419523,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "$ git push origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1778506430617,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_7ls0u7.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_7ls0u7.sh\"; } 2>/dev/null",
+      "timestamp": 1778511018381,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_rlpij.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_rlpij.sh\"; } 2>/dev/null",
+      "timestamp": 1778511018390,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_f5jo1u.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_f5jo1u.sh\"; } 2>/dev/null",
+      "timestamp": 1779260007079,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
     }
   ],
-  "lastUpdated": 1778506325442
+  "lastUpdated": 1779260007079
 }
