@@ -1,637 +1,534 @@
-/* =======================================================
-   1. CONFIGURACIÓN GENERAL
-   ======================================================= */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    padding: 20px;
-    color: #333;
+/* ================================================= */
+/* CONFIGURACIÓN GENERAL */
+/* ================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* =======================================================
-   2. TÍTULOS Y ENCABEZADOS (H1)
-   ======================================================= */
-.titulo-pagina { 
-    text-align: center; 
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(
+        180deg,
+        #0f172a,
+        #1e293b,
+        #312e81
+    );
+    overflow-x:hidden;
+    color:white;
 }
 
-.titulo-tabla {
-    color: #ff69b4;
-    border-bottom: 5px double #ff69b4;
-    display: inline-block;
+/* ================================================= */
+/* FONDO ANIMADO */
+/* ================================================= */
+
+.fondo-animado{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    overflow:hidden;
 }
 
-.titulo-espacio {
-    padding: 20px;
-    border: 2px dashed #fd7e14;
-    background-color: #fffaf0;
-    margin: 20px 0;
+.fondo-animado span{
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    animation:flotar 12s infinite ease-in-out;
 }
 
-/* Título con bordes múltiples (Propiedad Shorthand básica) */
-.titulo-bordes {
-    border-style: solid double dashed dotted;
-    border-width: 6px;
-    border-color: #ff69b4;
-    padding: 15px;
-    width: fit-content;
+.fondo-animado span:nth-child(1){
+    top:10%;
+    left:10%;
 }
 
-/* =======================================================
-   3. ESTILOS DE TABLAS
-   ======================================================= */
-.tabla-grande {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: white;
+.fondo-animado span:nth-child(2){
+    top:60%;
+    left:70%;
 }
 
-.tabla-grande th, 
-.tabla-grande td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
+.fondo-animado span:nth-child(3){
+    top:40%;
+    left:30%;
 }
 
-.tabla-grande thead th {
-    background-color: #ff69b4;
-    color: white;
+.fondo-animado span:nth-child(4){
+    top:80%;
+    left:20%;
 }
 
-.celda-agrupada {
-    background-color: #fff0f5;
-    font-weight: bold;
-    color: #ff1493;
+@keyframes flotar{
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-40px); }
+    100%{ transform:translateY(0px); }
 }
 
-/* --- Sección Inferior (Tablas una al lado de otra) --- */
-.seccion-inferior {
-    text-align: center;
-    margin-top: 30px;
+/* ================================================= */
+/* CONTENEDOR */
+/* ================================================= */
+
+.contenedor-principal{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
 }
 
-.tabla-pequena {
-    display: inline-table; /* Alineación horizontal sin Flex */
-    width: 30%;
-    margin: 10px;
-    border-collapse: collapse;
+/* ================================================= */
+/* HEADER */
+/* ================================================= */
+
+.header-principal{
+    text-align:center;
+    margin-bottom:50px;
 }
 
-.t-azul thead { background-color: #007bff; color: white; }
-.t-fucsia thead { background-color: #ff69b4; color: white; }
-.t-naranja thead { background-color: #fd7e14; color: white; }
-
-.der { text-align: right; }
-.der-total { 
-    text-align: right; 
-    font-weight: bold; 
-    background-color: #333; 
-    color: #ffd700; 
+.header-principal h1{
+    font-size:3rem;
+    background:linear-gradient(
+        90deg,
+        #ff69b4,
+        #87cefa,
+        #8a2be2,
+        #ff69b4
+    );
+    background-size:300%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:brillo 8s linear infinite;
 }
 
-/* =======================================================
-   4. LABORATORIO DE BORDES (PRÁCTICAS DE CLASE)
-   ======================================================= */
+@keyframes brillo{
+    0%{ background-position:0%; }
+    100%{ background-position:300%; }
+}
 
-/* Estilos con Shorthand (Abreviado) */
-.ej1 { border: 5px solid #0859ab; }
-.ej2 { border: 5px dotted #0859ab; }
-.ej4 { border: 5px double #0859ab; }
+.header-principal p{
+    margin-top:20px;
+    color:#dcdcdc;
+}
 
-/* El ejercicio del H1: Lógica del reloj (Top, Right, Bottom, Left) */
-.h1-practica {
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-    padding: 30px;
-    background-color: #fff0f5;
+/* ================================================= */
+/* TARJETA */
+/* ================================================= */
+
+.tarjeta-principal{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:2px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:40px;
+    margin-bottom:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    transition:0.5s;
+}
+
+.tarjeta-principal:hover{
+    transform:translateY(-10px);
+}
+
+.contenido-tarjeta h2{
+    color:#ff69b4;
+    margin-bottom:20px;
+}
+
+/* ================================================= */
+/* TITULOS */
+/* ================================================= */
+
+.titulo-seccion{
+    text-align:center;
+    font-size:2rem;
+    margin:40px 0 20px;
+}
+
+/* ================================================= */
+/* GRID */
+/* ================================================= */
+
+.cajas-grid,
+.gradientes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* ================================================= */
+/* CAJAS */
+/* ================================================= */
+
+.caja,
+.gradiente{
+    height:250px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* ================================================= */
+/* BACKGROUND FIXED */
+/* ================================================= */
+
+.fixed{
+    background-image:url('https://picsum.photos/800/600');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* ================================================= */
+/* BACKGROUND SCROLL */
+/* ================================================= */
+
+.scroll{
+    background-image:url('https://picsum.photos/id/1015/800/600');
+    background-size:cover;
+    background-position:center;
+    background-attachment:scroll;
+}
+
+/* ================================================= */
+/* BACKGROUND LOCAL */
+/* ================================================= */
+
+.local{
+    background-image:url('https://picsum.photos/id/1011/800/600');
+    background-size:cover;
+    background-position:center;
+    background-attachment:local;
+    overflow:auto;
+}
+
+.texto-scroll{
+    height:500px;
+    padding:20px;
+}
+
+/* ================================================= */
+/* GRADIENTES */
+/* ================================================= */
+
+.lineal{
+    background:linear-gradient(
+        45deg,
+        #ff69b4,
+        #ffb6c1,
+        #87cefa,
+        #8a2be2
+    );
+}
+
+.radial{
+    background:radial-gradient(
+        circle farthest-side,
+        #ff69b4,
+        #8a2be2,
+        #000
+    );
+}
+
+.conico{
+    background:conic-gradient(
+        from 45deg,
+        #ff69b4,
+        #ffb6c1,
+        #87cefa,
+        #8a2be2,
+        #ff69b4
+    );
+}
+
+.zigzag{
+    background:repeating-linear-gradient(
+        -45deg,
+        #ff69b4 0px,
+        #ff69b4 20px,
+        white 20px,
+        white 40px
+    );
+}
+
+/* ================================================= */
+/* PAISAJE */
+/* ================================================= */
+
+.paisaje-completo{
+    width:100%;
+    max-width:500px;
+    margin:40px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.paisaje-completo img{
+    width:100%;
+    display:block;
+}
+
+/* ================================================= */
+/* TABLA */
+/* ================================================= */
+
+.tabla-grande{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.tabla-grande th{
+    background:#ff69b4;
+    color:white;
+    padding:15px;
+}
+
+.tabla-grande td{
+    padding:15px;
+    border:1px solid #eee;
+    color:#333;
+}
+
+/* ================================================= */
+/* TOTAL */
+/* ================================================= */
+
+.total{
+    background:#111;
+    color:white;
+    font-size:18px;
+}
+
+.total td{
+    color:white;
+    font-weight:bold;
+}
+/* ====================== PAISAJE ====================== */
+
+.paisaje-final{
+    width:100%;
+    max-width:950px;
+    height:520px;
+    margin:40px auto;
+    position:relative;
+    overflow:hidden;
+
+    border:12px solid #111;
+    border-radius:6px;
+
+    background:black;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.8);
+}
+
+/* BARRA SUPERIOR */
+
+.barra-blanca{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:60px;
+
+    background:#fff;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:25px;
+
+    font-size:38px;
+    font-family:Arial,sans-serif;
+
+    color:black;
+
+    z-index:10;
+}
+
+/* CIELO */
+
+.cielo-final{
+    position:absolute;
+    top:60px;
+    left:0;
+
+    width:100%;
+    height:48%;
+
+    background:linear-gradient(
+        to bottom,
+        #ff8c00 0%,
+        #ffb300 40%,
+        #ffe600 100%
+    );
+}
+
+/* SOL */
+
+.sol-final{
+    position:absolute;
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background:white;
+
+    left:50%;
+    top:48%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:3;
+
+    box-shadow:
+        0 0 40px #fff,
+        0 0 90px #ffe066,
+        0 0 150px #ffcc00;
+}
+
+/* MAR */
+
+.mar-final{
+    position:absolute;
+
+    bottom:18%;
+    left:0;
+
+    width:100%;
+    height:42%;
+
+    z-index:4;
+
+    background:
     
-    /* Arriba(25px solid) | Derecha(5px double) | Abajo(10px dashed) | Izquierda(12px dotted) */
-    border-style: solid double dashed dotted; 
-    border-width: 25px 5px 10px 12px; 
-    border-color: #ff69b4; 
+    /* REFLEJO DEL SOL */
+    radial-gradient(
+        circle at center top,
+        rgba(0,255,255,0.7) 0%,
+        rgba(0,200,255,0.45) 12%,
+        rgba(0,140,255,0.15) 22%,
+        transparent 40%
+    ),
+
+    /* COLOR DEL MAR */
+    linear-gradient(
+        to bottom,
+        #1bb8ff 0%,
+        #008cff 45%,
+        #0050d0 100%
+    );
 }
 
-/* Estilo para imágenes (Avatar y Logos) */
-.img-mini {
-    border-radius: 50%;
-    border: 2px solid #ff69b4;
+/* ARENA */
+
+.arena-final{
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:18%;
+
+    background:linear-gradient(
+        to bottom,
+        #f5d27a,
+        #d7a243
+    );
+
+    border-radius:50% 50% 0 0;
+
+    z-index:5;
+}
+.caja{
+    padding:20px;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+.gradiente-card{
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:20px;
+    text-align:center;
+}
+/* ================================================= */
+/* NUEVOS GRADIENTES */
+/* ================================================= */
+
+/* RADIAL PATTERN */
+.patron-radial{
+    background:
+    radial-gradient(
+        circle,
+        #870160,
+        #ac255e,
+        #ca485c,
+        #e16b5c,
+        #f39060
+    );
+
+    background-size:80px 80px;
 }
 
-.tabla-img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ddd; /* Corregido: border en lugar de border-style */
-    border-radius: 30px 80px; /* Radio elíptico */
+/* BULLSEYE */
+.bullseye{
+    background:
+    repeating-radial-gradient(
+        circle,
+        #b30059 0px,
+        #b30059 10px,
+        white 10px,
+        white 20px
+    );
 }
 
-/* =======================================================
-   5. BORDER-RADIUS AVANZADO (FORMAS ELÍPTICAS)
-   ======================================================= */
+/* ZIG ZAG CIRCULAR */
+.zigzag-circular{
+    background:
+    radial-gradient(circle at 50% 100%, #ff0055 20%, transparent 21%),
+    radial-gradient(circle at 50% 0%, #ff8800 20%, transparent 21%);
 
-/* Contenedor principal del laboratorio */
-.contenedor-laboratorio {
-    border: 2px solid #ff69b4;
-    border-top-left-radius: 100% 4rem; /* Curva asimétrica */
-    overflow: hidden; 
-    padding: 20px;
+    background-size:60px 60px;
+    background-color:#fff;
 }
 
-.ej9-curva {
-    width: 200px;
-    height: 200px;
-    background-color: #00ced1; 
-    border-top-left-radius: 100% 5rem; 
-    border: 2px solid #333;
+/* CONIC MODERNO */
+.conic-moderno{
+    background:
+    conic-gradient(
+        #bc0be4,
+        #fd0300,
+        #ff9900,
+        #ffe600,
+        #00ff95,
+        #00c3ff,
+        #bc0be4
+    );
 }
 
-.ej10-forma-libre {
-    width: 200px;
-    height: 200px;
-    background-color: #00ced1;
-    margin-top: 20px;
-    /* Lógica: radios horizontales / radios verticales */
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-}
-body {
-    /* 1. La ruta de tu imagen (puede ser un link o archivo local) */
-    background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop'); 
-    
-    /* 2. Para que la imagen cubra toda la pantalla sin repetirse */
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
-    background-position: center;
+/* TARJETAS DE GRADIENTES */
+.gradiente-card{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
 }
 
-/* 3. CAPA DE SEGURIDAD: Para que tu texto se siga leyendo bien */
-main, .contenedor-principal {
-    background-color: rgba(255, 255, 255, 0.85); /* Blanco con transparencia */
-    padding: 30px;
-    border-radius: 15px; /* Aplicando tus curvas elípticas */
-    margin: 50px;
-    
-    /* Aplicando el shorthand de hoy */
-    border: 5px solid #ff69b4; 
-}
-/* --- EJERCICIO: Diferencia de Ajuste --- */
-
-/* Contenedor para ver 'auto' */
-.caja-auto {
-    width: 300px;
-    height: 200px;
-    border: 2px solid #333;
-    background-image: url('tigre.jpg'); /* Una imagen pequeña */
-    background-repeat: no-repeat;
-    
-    /* LA DIFERENCIA: Se verá la imagen original, 
-       quizás muy pequeña para este cuadro */
-    background-size: auto; 
+.gradiente-card:hover{
+    transform:translateY(-10px);
 }
 
-/* Contenedor para ver 'cover' */
-.caja-cover {
-    width: 300px;
-    height: 200px;
-    border: 2px solid #333;
-    background-image: url('paisaje.jpg'); /* Una imagen de banner */
-    
-    /* LA DIFERENCIA: Escalará y recortará el paisaje
-       para que no quede ni un píxel vacío en el cuadro */
-    background-size: cover;
-    background-position: center; /* Centramos el recorte */
-}
-.caja-prueba {
-    width: 100%;
-    height: 400px;
-    margin: 20px 0;
-    border: 5px solid #0859ab;
-    
-    /* Configuración base */
-    background-image: url('https://images.unsplash.com/photo-1464802686167-b939a67e06a1?auto=format&fit=crop&q=80&w=1000'); /* Imagen espacial */
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.5s ease; /* Para que el cambio se vea suave */
-}
-
-.controles {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-button {
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-/* --- SECCIÓN: LABORATORIO DE FONDOS Y FORMAS AVANZADAS --- */
-
-.contenedor-ejercicio {
-    /* 1. Imagen de fondo (Ajuste según la lámina de los girasoles) */
-    background-image: url('tu-imagen-espacial.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    /* Usamos 'cover' para que llene todo el cuadro sin dejar espacios */
-    background-size: cover; 
-    
-    /* 2. Bordes Múltiples (El sentido del reloj: 25px 5px 10px 12px) */
-    border-style: solid double dashed dotted;
-    border-width: 25px 5px 10px 12px;
-    border-color: #ff69b4; /* Tu fucsia */
-
-    /* 3. Radio Elíptico (La forma irregular de la última lámina) */
-    /* El '/' separa radio horizontal del vertical */
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-
-    /* Ajustes de contenido */
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Para que el texto resalte sobre el fondo */
-}
-
-/* Ejemplo de 'Contain' para comparar (como el tigre de la lámina) */
-.caja-contain {
-    background-image: url('tu-logo.png');
-    background-size: contain; /* Se ve la imagen completa sin recortar */
-    background-repeat: no-repeat;
-    border: 2px solid #0859ab;
-    width: 200px;
-    height: 200px;
-}
-.caja-prueba {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    border: 5px solid #ff69b4;
-    background-image: url('tu-imagen.jpg'); /* Pon aquí tu ruta */
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-size 0.5s ease; /* Para que el cambio sea suave */
-}
-/* Estilo para el visor interactivo (el de los botones) */
-#visor-imagen {
-    width: 100%;
-    max-height: 300px;
-    min-height: 200px;
-    border: 5px solid #ff69b4; /* Tu fucsia */
-    background-image: url('https://picsum.photos/800/600'); /* Imagen de prueba */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto; /* Valor inicial */
-    margin-bottom: 10px;
-}
-
-/* Estilo para el contenedor de identidad */
-.contenedor-ejercicio {
-    border-style: solid double dashed dotted;
-    border-width: 25px 5px 10px 12px;
-    border-color: #ff69b4;
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-    padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-/* --- LABORATORIO DE FONDOS (Basado en clase) --- */
-
-.fondo-cover {
-    width: 100%;
-    height: 400px;
-    border: 5px solid #0859ab;
-    
-    /* Configuración Maestra de Fondo */
-    background-image: url('tu-imagen.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    /* LA DIFERENCIA: Cubre todo el espacio (como el paisaje de la lámina) */
-    background-size: cover; 
-}
-
-.fondo-contain {
-    width: 100%;
-    height: 400px;
-    border: 5px dashed #ff69b4;
-    background-image: url('tu-logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    /* LA DIFERENCIA: Se ve toda la imagen sin recortar (como el tigre) */
-    background-size: contain; 
-}
-
-.fondo-mosaic {
-    width: 100%;
-    height: 200px;
-    background-image: url('icono-pequeño.png');
-    
-    /* Efecto mosaico (según tu lámina de 100px) */
-    background-size: 100px;
-    background-repeat: repeat; 
-}
-/* --- LABORATORIO DE IMAGEN (VERSION SIN FLEX) --- */
-
-.laboratorio-contenedor {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 15px;
-    border: 2px dashed #0859ab;
-    margin: 20px 0;
-    /* Para que los elementos internos no se salgan */
-    overflow: hidden; 
-}
-
-.caja-prueba {
-    /* Centrado clásico sin flex */
-    display: block;
-    margin: 0 auto 20px auto; 
-    
-    width: 300px;
-    height: 300px;
-    border: 5px solid #333;
-    background-color: white;
-    
-    /* Imagen para notar la diferencia */
-    background-image: url('https://picsum.photos/id/237/400/400'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    /* Efecto de suavizado */
-    transition: background-size 0.5s ease;
-}
-
-.controles-interactivos {
-    text-align: center; /* Centra los botones */
-}
-
-.controles-interactivos button {
-    display: inline-block; /* Los pone uno al lado del otro */
-    padding: 12px 20px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: #0859ab;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.controles-interactivos button:hover {
-    background-color: #ff69b4; /* Fucsia al pasar el mouse */
-}
-/* Contenedor principal del laboratorio */
-.laboratorio-contenedor {
-    background-color: #f9f9f9;
-    padding: 25px;
-    border: 2px solid #0859ab;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%; /* Ocupa casi todo el ancho */
-    text-align: center; /* Centra el texto y los botones */
-}
-
-/* La caja del visor */
-.caja-prueba {
-    /* Centrado manual */
-    display: block;
-    margin: 0 auto 20px auto; 
-    
-    /* Dimensiones fijas para notar el estiramiento de la imagen */
-    width: 300px;
-    height: 300px;
-    
-    /* Bordes siguiendo tu ejercicio de 'el reloj' */
-    border-style: solid;
-    border-width: 5px;
-    border-color: #333;
-
-    /* Configuración de la imagen */
-    background-image: url('https://picsum.photos/id/237/500/500'); 
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    /* El valor que cambiará con el botón */
-    background-size: auto; 
-}
-
-/* Estilo de los botones */
-.controles-interactivos button {
-    background-color: #0859ab;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    margin: 5px;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-}
-
-.controles-interactivos button:hover {
-    background-color: #ff69b4; /* Fucsia al pasar el mouse */
-}
-/* --- SECCIÓN: LABORATORIO DE DISEÑO AVANZADO --- */
-
-/* Título con Shorthand y Borde de Reloj (Láminas 1, 2 y 3) */
-.titulo-practica {
-    border-style: solid double dashed dotted;
-    border-width: 25px 5px 10px 12px;
-    border-color: #ff69b4; /* Tu fucsia característico */
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-}
-
-/* Contenedor con Imagen de Fondo (Lámina del Gato - COVER) */
-.caja-fondo-cover {
-    width: 100%;
-    height: 300px;
-    margin: 20px 0;
-    border: 3px solid #333;
-    
-    /* Configuración de imagen */
-    background-image: url('tu-imagen-espacial.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; /* Se estira para llenar todo */
-    
-    /* Forma elíptica de la lámina de border-radius avanzado */
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-}
-
-/* Contenedor con Imagen de Fondo (Lámina del Gato - CONTAIN) */
-.caja-fondo-contain {
-    width: 100%;
-    height: 300px;
-    border: 3px solid #333;
-    background-color: #000; /* Fondo negro para que no se vea vacío */
-    
-    background-image: url('tu-imagen-espacial.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; /* Se ve completa sin recortar */
-}
-/* --- LABORATORIO FINAL DE FONDOS --- */
-
-/* Ejemplo COVER (Como el gato superior o la araña de la derecha) */
-.practica-cover {
-    width: 100%;
-    height: 300px;
-    background-image: url('tu-imagen-gato.jpg');
-    
-    /* LA DIFERENCIA: Escala la imagen para cubrir TODO el contenedor. 
-       Se corta si es necesario para no dejar espacios vacíos. */
-    background-size: cover; 
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 5px solid #0859ab;
-}
-
-/* Ejemplo CONTAIN (Como el gato inferior o la araña de la izquierda) */
-.practica-contain {
-    width: 100%;
-    height: 300px;
-    background-image: url('tu-imagen-gato.jpg');
-    
-    /* LA DIFERENCIA: Escala la imagen para que se vea COMPLETA. 
-       Deja espacios vacíos (que podemos pintar) para no recortar nada. */
-    background-size: contain; 
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #333; /* Color de fondo para llenar los huecos */
-    border: 5px dashed #ff69b4;
-}
-
-/* Ejemplo AUTO / REPEAT (Como el patrón de los girasoles) */
-.practica-mosaico {
-    width: 100%;
-    height: 150px;
-    background-image: url('logo-pequeno.png');
-    
-    /* Mantiene el tamaño original y se repite */
-    background-size: auto; 
-    background-repeat: repeat;
-}
-main, .contenedor-principal {
-    background-color: rgba(255, 255, 255, 0.9); /* Blanco con 90% de opacidad */
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 1000px;
-    border-radius: 20px;
-    /* Tu borde fucsia en shorthand */
-    border: 8px solid #ff69b4; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
-}
-/* --- COMPONENTE MAESTRO CONSOLIDADO --- */
-
-.tarjeta-identidad-final {
-    /* 1. DIMENSIONES Y TEXTO */
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* 2. FONDO INTEGRADO (Concepto 'Cover' de la araña/gato) */
-    background-image: url('tu-imagen-espacial.jpg');
-    background-size: cover;      /* Llena todo el espacio sin huecos */
-    background-position: center; /* Centra la parte importante de la foto */
-    background-repeat: no-repeat;
-
-    /* 3. BORDES COMPLEJOS (Regla del Reloj: Arriba Der Abajo Izq) */
-    border-style: solid double dashed dotted;
-    border-width: 25px 5px 10px 12px;
-    border-color: #ff69b4; /* Tu fucsia de identidad */
-
-    /* 4. FORMA ELÍPTICA (Radio Avanzado con barra '/') */
-    /* Horizontal: 2rem 8rem 8rem 9rem / Vertical: 3rem 11rem 6rem 5rem */
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-
-    /* 5. EXTRA: Clipping para que el fondo respete la forma */
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* Título dentro de la tarjeta */
-.tarjeta-identidad-final h2 {
-    font-size: 2.5rem;
-    background: rgba(0, 0, 0, 0.4); /* Fondo sutil para legibilidad */
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-/* --- COMPONENTE FINAL CON TU ENLACE --- */
-
-.tarjeta-consolidada {
-    width: 100%;
-    max-width: 550px;
-    height: 350px;
-    margin: 20px auto;
-    
-    /* 1. EL ENLACE: Pega aquí tu enlace de descarga entre las comillas */
-    background-image: url('c:\Users\juanf\Downloads\lindo-gato-playa-mirando-camara_993067-30.avif');
-    
-    /* 2. EL EFECTO: 'cover' para que llene todo el cuadro como en la lámina */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* 3. BORDES MIXTOS (Regla del reloj) */
-    border-style: solid double dashed dotted;
-    border-width: 25px 5px 10px 12px;
-    border-color: #ff69b4; /* Tu color fucsia */
-
-    /* 4. RADIO ELÍPTICO (La forma irregular) */
-    border-radius: 2rem 8rem 8rem 9rem / 3rem 11rem 6rem 5rem;
-
-    /* Toques finales para que se vea pro */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    overflow: hidden;
-}
-/* ========================================================== */
-/* PAISAJE COMPLETO */
-/* ========================================================== */
-
-.paisaje-completo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-    max-width: 450px;
-
-    margin: 30px auto;
-
-    border-radius: 10px;
-    overflow: hidden;
-
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.paisaje-completo img {
-    width: 100%;
-    height: auto;
-    display: block;
+.gradiente-card h3{
+    margin-bottom:15px;
+    color:white;
 }

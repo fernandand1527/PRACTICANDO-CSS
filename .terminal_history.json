@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "workspacePath": "c:\\ADSO\\PRACTICANDO CSS",
+  "entries": [
+    {
+      "command": "git init",
+      "timestamp": 1778243697707,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1778243729082,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git config --global core.autocrlf true",
+      "timestamp": 1778243786488,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"Estructura final con formularios y bloques de colores\"",
+      "timestamp": 1778243811365,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin master",
+      "timestamp": 1778243837300,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git remote add origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1778243910421,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push -u origin master",
+      "timestamp": 1778243948138,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_b4usg4.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_b4usg4.sh\"; } 2>/dev/null",
+      "timestamp": 1778503159205,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1778503583696,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"feat: agregar tabla con alineaciones personalizadas, colspan y pie de página\"",
+      "timestamp": 1778503686109,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin fernanda_1-5",
+      "timestamp": 1778503700571,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin 'https://github.com/fernandand1527/PRACTICANDO-CSS.git'",
+      "timestamp": 1778503721703,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1778503740303,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "$ git push origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1778503766129,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin master",
+      "timestamp": 1778503781495,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1778506325442,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1778506348361,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: corregir desalineación de celdas por rowspan en tabla de servicios\"",
+      "timestamp": 1778506373680,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin fernanda_1-5",
+      "timestamp": 1778506387783,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push master",
+      "timestamp": 1778506419523,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "$ git push origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1778506430617,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_7ls0u7.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_7ls0u7.sh\"; } 2>/dev/null",
+      "timestamp": 1778511018381,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_rlpij.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_rlpij.sh\"; } 2>/dev/null",
+      "timestamp": 1778511018390,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_f5jo1u.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_f5jo1u.sh\"; } 2>/dev/null",
+      "timestamp": 1779260007079,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779260012672,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "cd .",
+      "timestamp": 1779260039237,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "cd \"PRUEBA PRACTICA\"",
+      "timestamp": 1779260081386,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout develop",
+      "timestamp": 1779260104316,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779260136543,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git commit -m \"feat: maquetación vertical del paisaje terminada\"",
+      "timestamp": 1779260157684,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git push origin master",
+      "timestamp": 1779260176168,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git checkout -b develop",
+      "timestamp": 1779260196390,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779260209718,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git commit -m \"feat: maquetación vertical del paisaje terminada\"",
+      "timestamp": 1779260223329,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779260243280,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779260849973,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git commit -m \"fix: corregir mayúscula de CSS y diseño vertical\"",
+      "timestamp": 1779260868622,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git push origin master",
+      "timestamp": 1779260889439,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779260949941,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git commit -m \"fix: corregir llamado de Style.css y estructura vertical\"",
+      "timestamp": 1779260975897,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779260995726,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1779261067412,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "cd ..",
+      "timestamp": 1779261241925,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS\\PRUEBA PRACTICA"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1779261256790,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add \"PRUEBA PRACTICA/\"",
+      "timestamp": 1779261385959,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1779261406579,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "cat << 'EOF' > \"PRUEBA PRACTICA/index.html\"<!DOCTYPE html><html lang=\"es\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Ejercicio Final - Fernanda García</title><link rel=\"stylesheet\" href=\"Style.css\"></head><body><header><h1 class=\"titulo-pagina\">Panel de Control de Servicios y Maquetación</h1><p class=\"h1-practica\">Mi Proyecto con Fondo Profesional</p></header><main class=\"contenedor-principal\"><section class=\"seccion-diseno\"><h2 class=\"titulo-bordes\">Práctica de Bordes Múltiples y Formas</h2><div class=\"formas-ejercicio\"><div class=\"ej9-curva\"></div><div class=\"ej10-forma-libre\"></div></div><h3 class=\"subtitulo\" style=\"margin-top: 20px; text-align: center;\">🧩 Composición de Paisaje Completo</h3><div class=\"paisaje-completo\"><img src=\"parte1.png\" alt=\"Parte 1 - Cascada Superior\"><img src=\"parte2.png\" alt=\"Parte 2 - Guacamayos Centro\"><img src=\"parte3.png\" alt=\"Parte 3 - Río Inferior\"></div><div class=\"contenedor-ejercicio\"><h2>Identidad en el Código</h2></div></section><hr><section class=\"seccion-tabla\"><h2 class=\"subtitulo\">📋 Catálogo Detallado - Lashista Pro</h2><table class=\"tabla-grande\"><caption>🚀 CATÁLOGO DE SERVICIOS PROFESIONALES</caption><thead><tr><th>VISTA</th><th>CATEGORÍA</th><th>SERVICIO</th><th colspan=\"3\">ESPECIFICACIONES TÉCNICAS</th><th>VALOR</th></tr></thead><tbody><tr><td><img src=\"https://picsum.photos/id/102/50/50\" class=\"img-mini\" alt=\"Lifting\"></td><td rowspan=\"3\" class=\"celda-agrupada\">PESTAÑAS</td><td>Lifting Pro</td><td>Base</td><td>Tinte</td><td>Queratina</td><td class=\"der\">$55.000</td></tr><tr><td><img src=\"https://picsum.photos/id/103/50/50\" class=\"img-mini\" alt=\"Extensiones\"></td><td>Extensiones</td><td>Seda</td><td>Pelo a Pelo</td><td>J-Curl</td><td class=\"der\">$85.000</td></tr><tr><td><img src=\"https://picsum.photos/id/312/50/50\" class=\"img-mini\" alt=\"Volumen\"></td><td>Volumen Ruso</td><td>4D</td><td>Seda</td><td>Curva D</td><td class=\"der\">$120.000</td></tr><tr><td><img src=\"https://picsum.photos/id/201/50/50\" class=\"img-mini\" alt=\"Henna\"></td><td rowspan=\"2\" class=\"celda-agrupada\">CEJAS</td><td>Henna</td><td>Diseño</td><td>Perfilado</td><td>Sombreado</td><td class=\"der\">$35.000</td></tr><tr><td><img src=\"https://picsum.photos/id/364/50/50\" class=\"img-mini\" alt=\"Laminado\"></td><td>Laminado</td><td>Nutrición</td><td>Fijación</td><td>Tinte</td><td class=\"der\">$45.000</td></tr></tbody><tfoot><tr><th colspan=\"6\" class=\"der\">TOTAL ESTIMADO:</th><th class=\"der-total\">$340.000</th></tr></tfoot></table></section><hr><section class=\"seccion-interactiva\"><h2>🔬 Laboratorio de Ajuste de Imagen</h2><div class=\"laboratorio-flex\"><div id=\"visor-imagen\" class=\"caja-prueba\"></div><div class=\"controles-interactivos\"><p>Cambiar <code>background-size</code>:</p><button onclick=\"cambiarFondo('auto')\">AUTO</button><button onclick=\"cambiarFondo('cover')\">COVER</button><button onclick=\"cambiarFondo('contain')\">CONTAIN</button></div></div><div id=\"practica-fondos\" class=\"grid-fondos\"><div class=\"fondo-cover\"><h3>COVER</h3></div><div class=\"fondo-contain\"><h3>CONTAIN</h3></div><div class=\"fondo-mosaic\"><h3>MOSAIC</h3></div></div></section><hr><h2 class=\"subtitulo\">📍 Distribución de Datos Auxiliares</h2><div class=\"seccion-inferior\"><table class=\"tabla-pequena t-azul\"><caption>📍 Izquierda</caption><thead><tr><th>ID</th><th>Dato</th></tr></thead><tbody><tr><td>1</td><td>Alfa</td></tr></tbody></table><table class=\"tabla-pequena t-fucsia\"><caption>📍 Centro</caption><thead><tr><th>Item</th><th>Valor</th></tr></thead><tbody><tr><td>A</td><td>100</td></tr></tbody></table><table class=\"tabla-pequena t-naranja\"><caption>📍 Derecha</caption><thead><tr><th>Ref</th><th>Estado</th></tr></thead><tbody><tr><td>X</td><td>OK</td></tr></tbody></table><section id=\"laboratorio-visual\"><h1 class=\"titulo-practica\">Identidad en el Código - Fernanda García</h1><div class=\"ejercicios-container\"><h3>Prueba 1: Ajuste COVER con Forma Elíptica</h3><div class=\"caja-fondo-cover\"></div><h3>Prueba 2: Ajuste CONTAIN (Imagen Completa)</h3><div class=\"caja-fondo-contain\"></div></div><div class=\"tarjeta-identidad-final\"><h2>Nuestra Identidad en el Código</h2><p>Backend Developer: Fernanda García</p></div></section></div></main><script>function cambiarFondo(valor) {const visor = document.getElementById('visor-imagen');visor.style.backgroundSize = valor;console.log(\"Cambiando background-size a: \" + valor);}</script></body></html>EOF",
+      "timestamp": 1779261469859,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1779261545579,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779261593153,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: maquetación vertical y estilos de paisaje corregidos\"",
+      "timestamp": 1779261627041,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779261644524,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: maquetación vertical y estilos de paisaje corregidos\"",
+      "timestamp": 1779261802647,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779261822903,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779261980591,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"feat: mover index a la raíz para despliegue directo\"",
+      "timestamp": 1779262008376,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779262032495,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262180315,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git restore ../.terminal_history.json",
+      "timestamp": 1779262224451,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"fix: maquetación vertical y actualización de historial\"",
+      "timestamp": 1779262273613,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779262295396,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262316256,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git restore .terminal_history.json",
+      "timestamp": 1779262417607,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash",
+      "timestamp": 1779262432060,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262453019,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout -- .terminal_history.json",
+      "timestamp": 1779262487213,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash --include-untracked",
+      "timestamp": 1779262502967,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262521974,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "rm .terminal_history.json",
+      "timestamp": 1779262557591,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262576822,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git reset --hard HEAD",
+      "timestamp": 1779262617053,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262640303,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git stash --include-untracked",
+      "timestamp": 1779262746232,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git checkout master",
+      "timestamp": 1779262792897,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git remote add origin https://github.com/fernandand1527/PRACTICANDO-CSS.git",
+      "timestamp": 1779263128199,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git remote add origin https://github.com/fernandand1527/PRUEBAPRACTICA",
+      "timestamp": 1779263163717,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779281224539,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"Corrección de imágenes y CSS\"",
+      "timestamp": 1779281304531,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779281321023,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "gitstatus",
+      "timestamp": 1779281434049,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git status",
+      "timestamp": 1779281440639,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779281749023,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"Actualizar proyecto\"",
+      "timestamp": 1779281758449,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git branch",
+      "timestamp": 1779281817780,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git add .",
+      "timestamp": 1779282531377,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git commit -m \"Agregar página principal\"",
+      "timestamp": 1779282543069,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git push origin develop",
+      "timestamp": 1779282565459,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "{ source \"C:/Users/juanf/AppData/Local/Temp/wshist_rao8qs.sh\" && rm \"C:/Users/juanf/AppData/Local/Temp/wshist_rao8qs.sh\"; } 2>/dev/null",
+      "timestamp": 1779292268382,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    },
+    {
+      "command": "git init",
+      "timestamp": 1779504366371,
+      "cwd": "c:\\ADSO\\PRACTICANDO CSS"
+    }
+  ],
+  "lastUpdated": 1779504366371
+}
